@@ -5,3 +5,12 @@ export const formatPrice = (price: number | null): string => {
     currency: "USD",
   }).format(value);
 };
+
+export const formatDateFull = (stringDate: string) => {
+  const date = new Date(stringDate);
+  return new Intl.DateTimeFormat("pt-BR", {
+    day: "numeric",
+    month: "long",
+    year: "numeric",
+  }).format(new Date(date));
+};
