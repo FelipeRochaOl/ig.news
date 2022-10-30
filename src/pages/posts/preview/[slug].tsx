@@ -1,14 +1,14 @@
 import Head from "next/head";
-import { GetStaticPaths, GetStaticPathsContext, GetStaticPropsContext, InferGetStaticPropsType } from "next"
+import Link from "next/link";
+import { useEffect } from "react";
+import { GetStaticPaths, GetStaticPropsContext, InferGetStaticPropsType } from "next"
+import { useRouter } from "next/router";
 import { useSession } from "next-auth/react"
 import { asHTML, asText } from "@prismicio/helpers";
 import { formatDateFull } from "../../../presenters";
 import { createPrismicClient } from "../../../services/prismic";
 
 import styles from '../post.module.scss';
-import Link from "next/link";
-import { useEffect } from "react";
-import { useRouter } from "next/router";
 
 type PostPreviewProps = InferGetStaticPropsType<typeof getStaticProps>
 type ParamsProps = {

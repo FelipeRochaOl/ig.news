@@ -1,8 +1,9 @@
-import { InferGetStaticPropsType } from 'next';
 import Head from 'next/head';
 import Link from 'next/link';
+import { InferGetStaticPropsType } from 'next';
 import { formatDateFull } from '../../presenters';
 import { createPrismicClient } from '../../services/prismic';
+
 import styles from './styles.module.scss';
 
 type PostProps = InferGetStaticPropsType<typeof getStaticProps>

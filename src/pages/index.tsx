@@ -1,12 +1,11 @@
-import type { GetStaticProps } from 'next'
-import { useSession } from 'next-auth/react';
 import Head from 'next/head'
 import Image from 'next/image'
-import Link from 'next/link';
+import type { GetStaticProps } from 'next'
+import { useSession } from 'next-auth/react';
 import { SubscribeButton } from '../components/SubscribeButton';
 import { formatPrice } from '../presenters';
 import { stripe } from '../services/stripe';
-import { IHomeProps } from './interfaces';
+import { IHomeProps } from '../interfaces';
 
 import styles from './styles.module.scss';
 

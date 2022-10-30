@@ -1,6 +1,6 @@
 import { query as q } from "faunadb";
 import type { NextApiRequest, NextApiResponse } from "next";
-import NextAuth, { NextAuthOptions, Session } from "next-auth";
+import NextAuth, { NextAuthOptions } from "next-auth";
 import GithubProvider from "next-auth/providers/github";
 
 import { faunaDB } from "../../../services/fauna";

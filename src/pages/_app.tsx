@@ -1,10 +1,8 @@
 import Link from 'next/link'
+import Header from '../components/Header'
 import { SessionProvider } from 'next-auth/react'
 import { PrismicProvider } from '@prismicio/react'
-import { PrismicPreview } from '@prismicio/next'
-import { repositoryName } from '../services/prismic'
-import { IAppProps } from './interfaces'
-import Header from '../components/Header'
+import { IAppProps } from '../interfaces'
 
 import '../styles/global.scss'
 
