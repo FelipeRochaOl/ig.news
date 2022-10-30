@@ -65,11 +65,13 @@ export const getStaticProps: GetStaticProps = async () => {
 ```
 # Project Ignite Ignews
 
-Project development using NextJS to the application, stripe to payment of the subscriptions in ignews and faunaDB to persistence data.
+Project development using NextJS to the application, stripe to payment of the subscriptions in ignews, faunaDB to persistence data and prismic CMS to create posts.
 
 Login with github in application.
 
 [https://ignews.felipe-rocha.com](https://www.notion.so/Desafio-02-Componentizando-a-aplica-o-b9f0f025c95b437699d0c3115f55b0f1)
+
+[![Watch the video](https://cdn.loom.com/sessions/thumbnails/a7552f09f443438daa98571cb706130d-with-play.gif)](https://www.loom.com/share/a7552f09f443438daa98571cb706130d)
 
 
 ## Technologies used
