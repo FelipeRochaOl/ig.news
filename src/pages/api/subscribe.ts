@@ -13,7 +13,10 @@ type User = {
   };
 };
 
-export default async (req: NextApiRequest, res: NextApiResponse) => {
+export default async function handler(
+  req: NextApiRequest,
+  res: NextApiResponse
+) {
   if (req.method === "POST") {
     const session = await getSession({ req });
     const email = session?.user?.email ?? "";
@@ -66,4 +69,4 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
     return res.status(200).json({ sessionId: stripeCheckoutSession.id });
   }
   return res.status(405).end("Method Not Allowed");
-};
+}

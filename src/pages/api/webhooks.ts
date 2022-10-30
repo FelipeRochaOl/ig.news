@@ -25,10 +25,10 @@ const relevantEvents = new Set([
   "customer.subscription.deleted",
 ]);
 
-export default async (
+export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse
-): Promise<void> => {
+): Promise<void> {
   if (req.method === "POST") {
     const streamBuffer = await buffer(req);
     const secret = req.headers["stripe-signature"] as string;
@@ -85,4 +85,4 @@ export default async (
     return res.json({ received: true });
   }
   return res.status(405).send("Method Not Allowed");
-};
+}
