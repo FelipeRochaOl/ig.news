@@ -4,7 +4,9 @@ Project development using NextJS to the application, stripe to payment of the su
 
 Login with github in application.
 
-[https://ignews.felipe-rocha.com](https://www.notion.so/Desafio-02-Componentizando-a-aplica-o-b9f0f025c95b437699d0c3115f55b0f1)
+[Notion](https://www.notion.so/Desafio-02-Componentizando-a-aplica-o-b9f0f025c95b437699d0c3115f55b0f1)
+
+[https://ignews.felipe-rocha.com](https://ignews.felipe-rocha.com)
 
 [![Watch the video](https://cdn.loom.com/sessions/thumbnails/a7552f09f443438daa98571cb706130d-with-play.gif)](https://www.loom.com/share/a7552f09f443438daa98571cb706130d)
 
