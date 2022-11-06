@@ -1,11 +1,11 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import type { GetStaticProps } from 'next'
+import type { GetStaticProps } from 'next';
 import { useSession } from 'next-auth/react';
+import Head from 'next/head';
+import Image from 'next/image';
 import { SubscribeButton } from '../components/SubscribeButton';
+import { IHomeProps } from '../interfaces';
 import { formatPrice } from '../presenters';
 import { stripe } from '../services/stripe';
-import { IHomeProps } from '../interfaces';
 
 import styles from './styles.module.scss';
 
@@ -29,7 +29,7 @@ export default function Home({ product }: IHomeProps) {
                 the latest content from our <br />
                 blog 🥰
               </p>
-              <SubscribeButton priceId={product.priceId} text='Ignews posts'/>
+              <SubscribeButton text='Ignews posts'/>
             </>
           ) : (
             <>
@@ -37,7 +37,7 @@ export default function Home({ product }: IHomeProps) {
                 Get access to all the publications <br />
                 <span>for {product.amount} month</span>
               </p>
-              <SubscribeButton priceId={product.priceId} text='Subscribe now'/>
+              <SubscribeButton text='Subscribe now'/>
             </>
           )}
         </section>
@@ -49,7 +49,7 @@ export default function Home({ product }: IHomeProps) {
             Get access to all the publications <br />
             <span>for {product.amount} month</span>
           </p>
-          <SubscribeButton priceId={product.priceId} text='Subscribe now'/>
+          <SubscribeButton text='Subscribe now'/>
         </section>
       )}
       <Image src="/images/avatar.svg" width="336" height="521" alt='Girl coding' />
