@@ -1,7 +1,7 @@
-import Head from "next/head";
-import { GetServerSidePropsContext, InferGetServerSidePropsType, NextApiRequest } from "next"
-import { getSession } from "next-auth/react"
 import { asHTML, asText } from "@prismicio/helpers";
+import { GetServerSidePropsContext, InferGetServerSidePropsType, NextApiRequest } from "next";
+import { getSession } from "next-auth/react";
+import Head from "next/head";
 import { formatDateFull } from "../../presenters";
 import { createPrismicClient } from "../../services/prismic";
 
